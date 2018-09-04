@@ -14,16 +14,15 @@ const codes = [
 
 function init() {
   let index = 0;
-  
+
   document.body.addEventListener('keydown', onKeyDownHandler);
 
   function onKeyDownHandler(e) {
     const key = e.key;
-console.log("key" key);
     if (key === codes[index]) {
       index++;
 
-      if (index === codes.length - 1) {
+      if (index === codes.length) {
         alert("You are the code master!");
 
         index = 0;
