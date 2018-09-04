@@ -11,6 +11,27 @@ const codes = [
   "a"
 ];
 
+
 function init() {
-  // your code here
+  let index = 0;
+  
+  document.body.addEventListener('keydown', onKeyDownHandler;
+
+  function onKeyDownHandler(e) {
+    const key = e.key;
+console.log("key" key);
+    if (key === codes[index]) {
+      index++;
+
+      if (index === codes.length - 1) {
+        alert("You are the code master!");
+
+        index = 0;
+      }
+    } else {
+      index = 0;
+    }
+  }
 }
+
+init();
